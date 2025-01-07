@@ -1,0 +1,11 @@
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.deps.json
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.dll
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.pdb
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.AssemblyInfoInputs.cache
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.AssemblyInfo.cs
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.dll
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\refint\ProniaOnion.Infrastructure.dll
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.pdb
+C:\Code Academy\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ref\ProniaOnion.Infrastructure.dll
