@@ -8,11 +8,11 @@ using ProniaOnion.Application.DTOs.Products;
 
 namespace ProniaOnion.Application.Validators
 {
-    public class CreateProductDTOValidator:AbstractValidator<CreateProductDTO>
+    public class UpdateProductDTOValidator:AbstractValidator<UpdateProductDTO>
     {
-        public CreateProductDTOValidator()
+        public UpdateProductDTOValidator()
         {
-            RuleFor(p=>p.Name)
+            RuleFor(p => p.Name)
                 .NotEmpty()
                     .WithMessage("Name is required")
                 .MaximumLength(100)
@@ -26,7 +26,7 @@ namespace ProniaOnion.Application.Validators
             RuleFor(p => p.Description)
                 .NotEmpty();
 
-            RuleFor(p=>p.Price)
+            RuleFor(p => p.Price)
                 .NotEmpty()
                 .GreaterThanOrEqualTo(1)
                 .LessThanOrEqualTo(9999.99m);
@@ -35,7 +35,7 @@ namespace ProniaOnion.Application.Validators
                 .NotEmpty()
                 .Must(categoryId => categoryId > 0);
 
-            RuleForEach(p=>p.ColorsIds)
+            RuleForEach(p => p.ColorsIds)
                 .NotEmpty()
                 .Must(colorId => colorId > 0);
 
