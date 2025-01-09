@@ -14,10 +14,11 @@ namespace ProniaOnion.Application.DTOs.Products
         int Id,
         string Name,
         string SKU,
+        decimal Price,
         string Description,
         CategoryItemDTO Category,
-        IEnumerable<ColorItemDTO> Colors
-        //IEnumerable<SizeItemDTO> Sizes,
-        //IEnumerable<TagItemDTO> Tags
+        IEnumerable<ColorItemDTO> Colors,
+        IEnumerable<SizeItemDTO> Sizes,
+        IEnumerable<TagItemDTO> Tags
         );
 }

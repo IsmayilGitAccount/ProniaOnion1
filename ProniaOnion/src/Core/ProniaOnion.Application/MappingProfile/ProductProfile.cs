@@ -35,8 +35,19 @@ namespace ProniaOnion.Application.MappingProfile
                 .ForCtorParam(
                 nameof(GetProductDTO.Colors),
                 opt => opt.MapFrom(
-                    p => p.ProductColors.Select(pc => new ColorItemDTO(pc.ColorId, pc.Color.Name))
+                    p => p.ProductColors.Select(pc => new ColorItemDTO(pc.ColorId, pc.Color.Name)).ToList() )
+                    )
+                 .ForCtorParam(
+                nameof(GetProductDTO.Sizes),
+                opt => opt.MapFrom(
+                    p => p.ProductSize.Select(ps => new SizeItemDTO(ps.SizeId, ps.Size.Name)).ToList()
+                    ))
+                 .ForCtorParam(
+                nameof(GetProductDTO.Tags),
+                opt => opt.MapFrom(
+                    p => p.ProductTags.Select(ps => new TagItemDTO(ps.TagId, ps.Tag.Name)).ToList()    
                     ));
+
 
             CreateMap<CreateProductDTO, Product>().ForMember(
                 p => p.ProductColors,
@@ -51,37 +62,6 @@ namespace ProniaOnion.Application.MappingProfile
                 p => p.ProductColors,
                 opt => opt.MapFrom(pDTO => pDTO.ColorsIds.Select(ci => new ProductColor { ColorId = ci })));
 
-
-
-
-
-
-
-
-
-
-
-            //CreateMap<Product, GetProductDTO>()
-            //    .ForCtorParam(
-            //    nameof(GetProductDTO.Sizes),
-            //    opt => opt.MapFrom(
-            //        p => p.ProductSize.Select(ps => new SizeItemDTO(ps.SizeId, ps.Size.Name))
-            //        ));
-            //CreateMap<CreateProductDTO, Product>().ForMember(
-            //    p => p.ProductSize,
-            //    opt => opt.MapFrom(pDTO => pDTO.SizeIds.Select(ci => new ProductSize { SizeId = ci })));
-
-
-            //CreateMap<Product, GetProductDTO>()
-            //    .ForCtorParam(
-            //    nameof(GetProductDTO.Tags),
-            //    opt => opt.MapFrom(
-            //        p => p.ProductTags.Select(pt => new TagItemDTO(pt.TagId, pt.Tag.Name))
-            //        ));
-
-            //CreateMap<CreateProductDTO, Product>().ForMember(
-            //   p => p.ProductTags,
-            //   opt => opt.MapFrom(pDTO => pDTO.TagIds.Select(ci => new ProductTag { TagId = ci })));
 
         }
     }

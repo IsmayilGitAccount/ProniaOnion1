@@ -37,7 +37,7 @@ namespace ProniaOnion.Persistence.Implementations.Services
 
         public async Task<GetProductDTO> GetByIdAsync(int id)
         {
-           var product = _mapper.Map<GetProductDTO>(await _productRepository.GetByIdAsync(id, "Category", "ProductColors.Color"));
+           var product = _mapper.Map<GetProductDTO>(await _productRepository.GetByIdAsync(id, "Category", "ProductColors.Color", "ProductSize.Size", "ProductTags.Tag"));
 
             if (product == null) throw new Exception("Product does not exists");
 
